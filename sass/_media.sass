@@ -1,0 +1,210 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+    .section-flex
+        flex-direction: column
+        p
+            margin: 0 auto
+        .item
+            padding: 15px
+            img
+                width: 20%
+                height: auto
+            h2
+                padding: 25px
+    
+    .section-presentation-flex
+        flex-direction: column
+        text-align: center
+        width: 100%
+        margin: 0 auto
+        .item-presentation
+            p
+                padding: 3%
+            .name
+                font-size: 30px
+
+    .item
+        h2
+            padding: 5% 0 3% 0
+        p
+            padding: 0 0 7% 0
+
+.footer-price
+    .item-price
+        h3
+            font-size: 65px !important
+            sup
+                font-size: 40px !important
+            sub
+                font-size: 25px !important 
+
+
+
+// ≥992px
++media-breakpoint-down(md)
+    .footer
+        .footer-price
+            flex-direction: column
+            .item-price
+                width: 50%
+                box-shadow: none
+                margin: 2% 0
+                p
+                    font-size: 16px
+        .footer-contact
+            .footer-contact-flex
+                text-align: center
+                flex-wrap: wrap
+                .item-contact
+                    width: 40%
+                    ul
+                        li
+                            text-align: center
+
+    .header
+        .top-line
+            .span
+                span
+                    display: block
+
+    .menu
+        display: none
+    
+    .login
+        display: none
+
+    .header
+        .top-line
+            padding: 10px 10%
+            justify-content: space-between
+
+    .s-main
+        p
+            width: 80%
+
+
+
+// ≥768px
++media-breakpoint-down(sm)
+    h1
+        font-size: 4vw
+
+    .footer
+        .footer-price
+            flex-direction: column
+            .item-price
+                width: 70%
+
+    .section-presentation-flex
+        padding: 0
+        img
+            display: none
+        .item-presentation
+            padding: 5% 3%
+            .fas
+                display: none
+            p
+                padding: 0
+            a
+                padding: 0
+            .name
+                padding: 0 0 3% 0
+                font-size: 4vw
+
+    .header
+        text-align: center
+        .header-flex
+            padding: 15% 3% 0 3%
+            p
+                width: 100%
+                text-align: center
+                opacity: 0.7
+            .container
+                .row
+                    .buttons
+                        text-align: center
+
+    .s-main
+        padding: 0
+        h2
+            margin: 0
+        .section-flex
+            .item
+                padding: 5% 0
+
+    .button-header
+        margin: 0
+
+    .color
+        background-color: #f5f5f5
+
+    .rellax
+        display: none
+
+// ≥576px
++media-breakpoint-down(xs)
+
+    .name
+        font-size: 7vw !important
+        padding: 7% 2% !important
+        
+    h2
+        font-size: 5vw
+
+    h1
+        font-size: 7vw
+        text-align: center
+
+    .footer
+        padding: 0
+        .footer-price
+            flex-direction: column
+            .item-price
+                width: 90%
+                h3
+                    font-size: 40px
+        .footer-contact
+            margin-top: 15px
+            border-radius: 50px 50px 0 0
+            .footer-contact-flex    
+                justify-content: space-between
+                padding: 5%
+
+    .s-main
+        padding: 0 2%
+        .item
+            padding: 5% 0
+
+    .header
+        .top-line
+            padding: 0px 5%
+        .header-flex
+                padding: 20% 2% 0 2%
+                line-height: 35px
+
+    .button-header
+        margin: 0
+
+    .button-header-transparent
+        display: none
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

@@ -1,0 +1,321 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+*
+	box-sizing: border-box
+
+body
+	height: 100%
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	background-color: #fafafa
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+h1
+	font-size: 3vw
+
+p
+	font-size: 18px
+	color: $text
+	opacity: 0.6
+
+li
+	list-style-type: none
+	text-align: left
+
+ul
+	padding: 0
+
+a
+	color: $text
+	text-decoration: none!important
+	transition: color 0.2s ease-out
+	&:hover
+		color: $accent
+
+.button
+	text-align: center
+	line-height: 42px
+	width: 180px
+	height: 42px
+	border: 0
+	cursor: pointer
+	background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f)
+	box-shadow: -14px 17px 24px rgba(226, 88, 91, 0.45)
+	border-radius: 21px
+	background-color: #ff6a6d
+	color: #fff
+	font-weight: 400
+	font-size: 18px
+	transition: all .3s ease
+	outline: none
+	background-size: 300% 100%
+	moz-transition: all .4s ease-in-out
+    -o-transition: all .4s ease-in-out
+    -webkit-transition: all .4s ease-in-out
+    transition: all .4s ease-in-out
+	&:hover
+		color: #fff
+		background-position: 100% 0
+		moz-transition: all .4s ease-in-out
+		-o-transition: all .4s ease-in-out
+		-webkit-transition: all .4s ease-in-out
+		transition: all .4s ease-in-out
+	&:focus
+		color: #fff
+		outline: none
+
+.button-header
+	cursor: pointer
+	background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f)
+	box-shadow: -14px 17px 24px rgba(226, 88, 91, 0.45)
+	border-radius: 32.5px;
+	padding: 20px 50px
+	margin: 0 8% 0 0
+	&-transparent
+		background-color: transparent
+		background-image: none
+		border: 2px solid $accent
+		color: $accent
+		box-shadow: none
+		&:hover
+			color: #fff
+			background-color: darken(#ff6a6d, 4)
+			box-shadow: -14px 17px 24px rgba(226, 88, 91, 0.45)
+		&:active
+			color: #fff
+			background-color: darken(#ff6a6d, 6)
+			box-shadow: -14px 17px 24px rgba(226, 88, 91, 0.45)
+
+.header
+	.top-line
+		background-color: #fafafa
+		opacity: 0.95
+		z-index: 99
+		position: fixed
+		width: 100%
+		display: flex
+		justify-content: space-around
+		flex-wrap: wrap
+		align-items: center
+		padding: 10px 0 10px 0
+		box-shadow: 0 10px 10px rgba(226, 88, 91, 0.15)
+		.span
+			span
+				display: none
+				padding-bottom: 4px
+				width: 30px
+				height: auto
+				border-bottom: 4px solid $accent
+		.button
+				box-shadow: none
+		.logo
+			color: $accent
+			font-size: 32px
+			font-weight: 700
+		.menu
+			width: 45%
+			word-spacing: 30px
+			opacity: 0.5
+			font-size: 18px
+			letter-spacing: 0.9px
+			text-decoration: none
+			text-align: right
+
+	.header-flex
+		color: $text
+		font-weight: 700
+		padding: 10% 15%
+		line-height: 60px
+		p
+			opacity: 0.5
+			font-size: 18px
+			line-height: 40px
+			width: 90%
+		h1
+			padding: 0 0 7% 0
+			line-height: 70px
+
+.s-main
+	padding: 0 10%
+	margin-top: 0
+	text-align: center
+	> p
+		width: 40%
+		margin: 0 auto
+
+.name
+	font-size: 40px
+
+.section-flex
+	padding: 10% 0 5% 0
+	display: flex
+	justify-content: space-around
+	align-items: center
+	.item
+		text-align: center
+		h2
+			padding: 15% 0 0 0
+		p
+			padding: 0 5%
+
+.section-presentation-flex
+	padding: 3% 10%
+	display: flex
+	justify-content: center
+	align-items: center
+	img
+		width: 50%
+		height: auto
+		padding: 1%
+	.item-presentation
+		padding: 2%
+		.fas
+			color: $accent
+			padding-right: 70px
+		p
+			padding-left: 54px
+			padding-bottom: 3%
+		h2
+			padding-bottom: 3%
+		a
+			color: #199ae6
+			padding-left: 54px
+		.name
+			padding-left: 3%
+			font-size: 40px
+
+.rellax
+	position: absolute
+
+.rellax-right-first, .rellax-right-second
+	right: 0
+
+.rellax-left-first, .rellax-left-second
+	left: 0
+	.rellax-left-first
+		top: 60%
+	.rellax-left-second
+		top: 90%
+
+.footer
+	padding: 0 5%
+	.footer-price
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 2% 0
+		.item-price
+			text-align: center
+			background-color: #fafafa
+			border-radius: 15px
+			width: 30%
+			max-width: 400px
+			padding: 30px 0
+			box-shadow: 0 0 40px rgba($accent, 0.2);
+			h3
+				font-weight: 300
+				color: $text
+				opacity: 0.7
+				font-size: 4vw
+				sup
+					font-size: 3vw
+				sub
+					font-size: 28px
+			h6
+				color: $text
+				opacity: 0.6
+			p
+				padding: 3% 15%
+				text-align: left
+				font-size: 16px
+				.fas
+					color: #199ae6
+					font-size: 16px
+					padding-right: 20px
+			.button
+				padding: 20px 40px
+				cursor: pointer
+				border-radius: 50px
+				box-shadow: -14px 17px 24px rgba(#199ae6, 0.45) 
+				background-color: #199ae6
+				background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed)
+		.best
+			padding: 0 0 30px 0
+			box-shadow: 0 0 30px rgba($accent, 0.1);
+			z-index: 2
+			.button
+				padding: 20px 40px
+				cursor: pointer
+				background-color: $accent
+				background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f)
+				box-shadow: -14px 17px 24px 1px rgba(226, 88, 91, 0.45)
+			.fas
+				color: $accent !important
+				font-size: 24px
+			h2
+				color: #fafafa
+				width: auto
+				top: 25px
+				text-transform: uppercase
+				padding: 5%
+				background-color: $accent
+				border-radius: 15px 15px 0 0
+	.footer-contact
+		background-color: #f1f1f1
+		opacity: 0.6
+		border-radius: 130px 130px 0 0
+		.footer-p
+			text-align: center
+			padding: 1% 0
+			font-size: 14px
+			margin: 0
+		.footer-contact-flex
+			padding: 5%
+			display: flex
+			justify-content: space-around
+			.item-contact
+				color: $text
+				opacity: 1
+				line-height: 40px
+				font-family: $second-font
+				h4
+					text-transform: upperscase
+					font-size: 22px
+					padding: 0 0 15% 0
+					color: #000000
+
+
+@import "media" // Always at the end
